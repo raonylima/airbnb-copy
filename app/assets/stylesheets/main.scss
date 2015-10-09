@@ -1,0 +1,16 @@
+header {
+	@include outer-container(100%); 
+}
+
+.logo {
+	@include span-columns(2);
+	width: rem(100px);
+}
+
+nav {
+	@include span-columns(3);
+	@include omega();
+	@include shift(7);
+	float: right;
+}
+
