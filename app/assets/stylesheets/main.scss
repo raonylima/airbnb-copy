@@ -8,9 +8,26 @@ header {
 }
 
 nav {
-	@include span-columns(3);
+	@include span-columns(4);
 	@include omega();
-	@include shift(7);
+	@include shift(6);
 	float: right;
+	margin-top: 26px;
 }
 
+nav a:first-child {	
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 6px 6px;
+}
+
+.banner {
+    background-image: url("maracaipe.jpg");
+    background-size: cover;
+    height: 550px;
+}
+
+nav a {
+	color: #fff;
+	margin-left: 10px;
+}
