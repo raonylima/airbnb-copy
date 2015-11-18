@@ -1,6 +1,6 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
+  /*background-color: $action-color;*/
   border: 0;
   border-radius: $base-border-radius;
   color: #fff;
@@ -18,11 +18,11 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
+  /*&:hover,
   &:focus {
     background-color: shade($action-color, 20%);
     color: #fff;
-  }
+  } */
 
   &:disabled {
     cursor: not-allowed;

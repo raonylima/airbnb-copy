@@ -1,5 +1,7 @@
 header {
 	@include outer-container(100%); 
+	position: absolute;
+	z-index: 1000;
 }
 
 .logo {
@@ -8,10 +10,10 @@ header {
 }
 
 nav {
-	@include span-columns(4);
+	/*@include span-columns(4);
 	@include omega();
 	@include shift(6);
-	float: right;
+	float: right;*/
 	margin-top: 26px;
 }
 
@@ -22,6 +24,7 @@ nav a:first-child {
 }
 
 .banner {
+    @include row();
     background-image: url("maracaipe.jpg");
     background-size: cover;
     height: 550px;
@@ -30,4 +33,31 @@ nav a:first-child {
 nav a {
 	color: #fff;
 	margin-left: 10px;
+}
+
+#h1-home {	
+	@include span-columns(6);
+	@include shift(3);
+	margin-top: 200px;
+	margin-bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.sutia {
+	@include span-columns(6);
+	@include shift(4);
+	color: #fff;
+}
+
+.bttn-h1 {
+	@include span-columns(2);
+	@include shift(5);
+	background-color: rgba(255,255,255,0.4);
+	
+	&:hover {
+		background-color: rgba(0,0,0,0.4);
+	}
+	
 }
