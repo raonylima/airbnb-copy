@@ -1,7 +1,11 @@
 header {
-	@include outer-container(100%);
+	/*@include outer-container(100%);*/
 	position: absolute;
 	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .logo {
@@ -12,8 +16,8 @@ header {
 nav {
 	@include span-columns(4);
 	@include omega();
-	/*@include shift(6);
-	float: right;*/
+	@include shift(6);
+	float: right;
 	margin-top: 26px;
 }
 
@@ -60,4 +64,22 @@ nav a {
 		background-color: rgba(0,0,0,0.4);
 	}
 	
+}
+
+.search-box {
+	@include outer-container(60%);
+}
+
+
+form input .where {
+	@include span-columns(4);	
+}
+
+form input .chekinout {
+	@include span-columns(1);	
+}
+
+form input .guest {
+	@include span-columns(1);
+
 }
