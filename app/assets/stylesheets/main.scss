@@ -67,19 +67,36 @@ nav a {
 }
 
 .search-box {
-	@include outer-container(60%);
+	@include outer-container(100%);
+	background-color: #e7e7e7;
+	height: 80px; 
+
 }
 
-
-form input .where {
-	@include span-columns(4);	
+form {
+	display: inline-block;
 }
 
-form input .chekinout {
-	@include span-columns(1);	
+form input {
+	float: left;
+    height: 40px;
+    border-color: #e1e1e1;
+    box-shadow: none;
+
 }
 
-form input .guest {
-	@include span-columns(1);
+.where {
+	/*@include span-columns(4);*/
+	width: 230px;
+}
+
+.chekinout {
+	/*@include span-columns(1);*/
+	width: 90px;
+}
+
+.guest {
+	/*@include span-columns(1);*/
+	width: 90px;
 
 }
