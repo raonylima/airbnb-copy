@@ -67,19 +67,20 @@ nav a {
 }
 
 .search-box {
-	@include outer-container(60%);
+	@include outer-container();
 }
 
+form{display: inline-flex;}
 
-form input .where {
-	@include span-columns(4);	
-}
+// form input .where {
+// 	@include span-columns(4);	
+// }
 
-form input .chekinout {
-	@include span-columns(1);	
-}
+// form input .chekinout {
+// 	@include span-columns(1);	
+// }
 
-form input .guest {
-	@include span-columns(1);
+// form input .guest {
+// 	@include span-columns(1);
 
-}
+// }
