@@ -1,86 +1,78 @@
 header {
-	/*@include outer-container(100%);*/
-	position: absolute;
-	z-index: 1000;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+  @include outer-container(100%);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
-	@include span-columns(2);
-	width: rem(100px);
+  width: rem(100px);
+  float: left;
 }
 
 nav {
-	@include span-columns(4);
-	@include omega();
-	@include shift(6);
-	float: right;
-	margin-top: 26px;
+  float: right;
+  margin-top: 26px;
+  margin-right: 18px;
 }
 
-nav a:first-child {	
-    border: 2px solid #fff;
-    border-radius: 4px;
-    padding: 6px 6px;
+nav a:first-child { 
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 6px 6px;
 }
 
 .banner {
-    @include row();
-    background-image: url("maracaipe.jpg");
-    background-size: cover;
-    height: 550px;
+  @include row();
+  background-image: url("beco-tokyo.gif");
+  background-size: cover;
+  height: 550px;
 }
 
 nav a {
-	color: #fff;
-	margin-left: 10px;
+  color: #fff;
+  margin-left: 10px;
 }
 
-#h1-home {	
-	@include span-columns(6);
-	@include shift(4);
-	margin-top: 200px;
-	margin-bottom: 0px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 3em;
+#h1-home {  
+  @include span-columns(6);
+  @include shift(4);
+  margin-top: 200px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
 }
 
 .sutia {
-	@include span-columns(6);
-	@include shift(4);
-	color: #fff;
+  @include span-columns(6);
+  @include shift(4);
+  color: #fff;
 }
 
 .bttn-h1 {
-	@include span-columns(2);
-	@include shift(5);
-	background-color: rgba(255,255,255,0.4);
-	
-	&:hover {
-		background-color: rgba(0,0,0,0.4);
-	}
-	
+  @include span-columns(2);
+  @include shift(5);
+  background-color: rgba(255,255,255,0.4);
+  
+  &:hover {
+      background-color: rgba(0,0,0,0.4);
+  }
+    
 }
 
 .search-box {
-	@include outer-container();
+    @include outer-container;
+
+
+    form{
+        @include span-columns(12);
+        display: inline-flex;
 }
 
-form{display: inline-flex;}
-
-// form input .where {
-// 	@include span-columns(4);	
-// }
-
-// form input .chekinout {
-// 	@include span-columns(1);	
-// }
-
-// form input .guest {
-// 	@include span-columns(1);
-
-// }
+    form input {
+    }
+}
