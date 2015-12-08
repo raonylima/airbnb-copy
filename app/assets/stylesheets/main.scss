@@ -18,12 +18,12 @@ nav {
 	@include omega();
 	@include shift(6);
 	float: right;
-	margin-top: 26px;
+	margin-top: rem(26px);
 }
 
 nav a:first-child {	
     border: 2px solid #fff;
-    border-radius: 4px;
+    border-radius: rem(4px);
     padding: 6px 6px;
 }
 
@@ -31,18 +31,18 @@ nav a:first-child {
     @include row();
     background-image: url("maracaipe.jpg");
     background-size: cover;
-    height: 550px;
+    height: rem(550px);
 }
 
 nav a {
 	color: #fff;
-	margin-left: 10px;
+	margin-left: rem(10px);
 }
 
 #h1-home {	
 	@include span-columns(6);
 	@include shift(4);
-	margin-top: 200px;
+	margin-top: rem(200px);
 	margin-bottom: 0px;
     color: #fff;
     text-transform: uppercase;
