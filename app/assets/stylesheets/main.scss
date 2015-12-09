@@ -9,16 +9,14 @@ header {
 }
 
 .logo {
-	@include span-columns(2);
 	width: rem(100px);
+	float: left;
 }
 
 nav {
-	@include span-columns(4);
-	@include omega();
-	@include shift(6);
 	float: right;
 	margin-top: rem(26px);
+	margin-right: rem(18px);
 }
 
 nav a:first-child {	
@@ -74,14 +72,15 @@ nav a {
 }
 
 form {
+	@include span-columns(12);
 	display: inline-flex;
 }
 
 form input {
-	float: left;
+	/*float: left;
     height: 40px;
     border-color: #e1e1e1;
-    box-shadow: none;
+    box-shadow: none;*/
 
 }
 
