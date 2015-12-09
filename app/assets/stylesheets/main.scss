@@ -67,14 +67,14 @@ nav a {
 }
 
 .search-box {
-	@include outer-container(100%);
-	background-color: #e7e7e7;
-	height: 80px; 
+	@include outer-container();
+	/*background-color: #e7e7e7;
+	height: 80px; */
 
 }
 
 form {
-	display: inline-block;
+	display: inline-flex;
 }
 
 form input {
@@ -85,18 +85,19 @@ form input {
 
 }
 
-.where {
-	/*@include span-columns(4);*/
+/*.where {
+	@include span-columns(4);
 	width: 230px;
 }
+*/
 
-.chekinout {
-	/*@include span-columns(1);*/
+/*.chekinout {
+	@include span-columns(1);
 	width: 90px;
-}
+}*/
 
-.guest {
-	/*@include span-columns(1);*/
+/*.guest {
+	@include span-columns(1);
 	width: 90px;
 
-}
+}*/
