@@ -27,10 +27,27 @@ nav a:first-child {
 
 .banner {
     @include row();
-    background-image: url("maracaipe.jpg");
+}
+
+.background {
+	background-image: url("maracaipe.jpg");
     background-size: cover;
     height: rem(550px);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
 }
+
+.banner-content {
+    height: rem(550px);
+}
+
+/*.banner-content-text {
+	height: rem(300px);
+}*/
 
 nav a {
 	color: #fff;
@@ -57,38 +74,45 @@ nav a {
 	@include span-columns(2);
 	@include shift(5);
 	background-color: rgba(255,255,255,0.4);
-	
 	&:hover {
 		background-color: rgba(0,0,0,0.4);
 	}
+
+
 	
 }
 
-.search-box {
-	@include outer-container();
-	/*background-color: #e7e7e7;
-	height: 80px; */
-
-}
+/*.search-box {
+	background-color: #00000;
+	margin: 0 auto;
+	display: block;
+}*/
 
 form {
-	@include span-columns(12);
+
+	@include span-columns(10);
+	@include shift(1);
 	display: inline-flex;
+	margin-top: 150px;
+	
 }
 
 form input {
-	/*float: left;
+	float: center;
     height: 40px;
-    border-color: #e1e1e1;
-    box-shadow: none;*/
+    box-shadow: none;
 
 }
 
-/*.where {
-	@include span-columns(4);
+.where {
+	width: 300px;
+}
+
+where {
+	
 	width: 230px;
 }
-*/
+
 
 /*.chekinout {
 	@include span-columns(1);
