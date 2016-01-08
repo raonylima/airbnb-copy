@@ -82,20 +82,18 @@ nav a {
 	
 }
 
-/*.search-box {
-	background-color: #00000;
-	margin: 0 auto;
-	display: block;
-}*/
+.search-box {
+	@include outer-container;
+}
+
 
 form {
-
 	@include span-columns(10);
 	@include shift(1);
-	display: inline-flex;
 	margin-top: 150px;
-	
+	display: inline-flex;
 }
+
 
 form input {
 	float: center;
