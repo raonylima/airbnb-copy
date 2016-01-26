@@ -9,6 +9,7 @@ header {
 }
 
 .logo {
+<<<<<<< HEAD
   width: rem(100px);
   float: left;
 }
@@ -30,9 +31,50 @@ nav a:first-child {
   background-image: url("beco-tokyo.gif");
   background-size: cover;
   height: rem(550px);
+=======
+	width: rem(100px);
+	float: left;
 }
 
+nav {
+	float: right;
+	margin-top: rem(26px);
+	margin-right: rem(18px);
+}
+
+nav a:first-child {	
+    border: 2px solid #fff;
+    border-radius: rem(4px);
+    padding: 6px 6px;
+}
+
+.banner {
+    @include row();
+}
+
+.background {
+	background-image: url("maracaipe.jpg");
+    background-size: cover;
+    height: rem(550px);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+}
+
+.banner-content {
+    height: rem(550px);
+>>>>>>> 3dc6a847746ff2c526fc15fd168ea55125921a84
+}
+
+/*.banner-content-text {
+	height: rem(300px);
+}*/
+
 nav a {
+<<<<<<< HEAD
   color: #fff;
   margin-left: rem(10px);
 }
@@ -45,6 +87,20 @@ nav a {
   color: #fff;
   text-transform: uppercase;
   font-size: 3em;
+=======
+	color: #fff;
+	margin-left: rem(10px);
+}
+
+#h1-home {	
+	@include span-columns(6);
+	@include shift(4);
+	margin-top: rem(200px);
+	margin-bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+>>>>>>> 3dc6a847746ff2c526fc15fd168ea55125921a84
 }
 
 .sutia {
@@ -54,6 +110,7 @@ nav a {
 }
 
 .bttn-h1 {
+<<<<<<< HEAD
   @include span-columns(2);
   @include shift(5);
   background-color: rgba(255,255,255,0.4);
@@ -76,3 +133,56 @@ nav a {
     form input {
     }
 }
+=======
+	@include span-columns(2);
+	@include shift(5);
+	background-color: rgba(255,255,255,0.4);
+	&:hover {
+		background-color: rgba(0,0,0,0.4);
+	}
+
+
+	
+}
+
+.search-box {
+	@include outer-container;
+}
+
+
+form {
+	@include span-columns(10);
+	@include shift(1);
+	margin-top: 150px;
+	display: inline-flex;
+}
+
+
+form input {
+	float: center;
+    height: 40px;
+    box-shadow: none;
+
+}
+
+.where {
+	width: 300px;
+}
+
+where {
+	
+	width: 230px;
+}
+
+
+/*.chekinout {
+	@include span-columns(1);
+	width: 90px;
+}*/
+
+/*.guest {
+	@include span-columns(1);
+	width: 90px;
+
+}*/
+>>>>>>> 3dc6a847746ff2c526fc15fd168ea55125921a84
